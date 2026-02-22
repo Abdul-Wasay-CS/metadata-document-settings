@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 2: METADATA & DOCUMENT SETTINGS
+  FILE: viewport-and-responsive-intro.html
+
+  WHAT:
+    Demonstrates the viewport meta tag and why it matters for mobile devices.
+
+  HOW:
+    1. Open this file in your browser on a desktop and resize the window.
+    2. If possible, also open it on a phone or using your browser's
+       device emulator / responsive design mode.
+    3. Comment out the viewport meta tag, reload, and compare the
+       behavior on small screens.
+
+  WHY:
+    The viewport meta tag tells mobile browsers how to scale the page.
+    Without it, the page may appear zoomed out and tiny, making
+    text hard to read and layout harder to control.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      This line is critical for responsive design on mobile:
+      - width=device-width: match the screen's width in CSS pixels.
+      - initial-scale=1.0: start at a 1:1 zoom level.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport &amp; Responsive Intro</title>
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        margin: 1;
+      }
+
+      header {
+        padding:1rem;
+        background-color: #0d4cca;
+        color: white;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        padding: .65rem 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .notice {
+        background-color: rgb(238, 238, 114);
+        border-left: 4px solid rgb(15, 89, 178);
+        padding: .5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!--
+        In a real site, this would contain links to other pages.
+        It's included here just to show that the viewport tag affects
+        the entire page, including navigation.
+      -->
+
+    </nav>
+
+    
+
+    <header>
+      <h1>Viewport &amp; Responsive Design</h1>
+    </header>
+    <main>
+      <div class="card">
+        <p>
+          This layout uses a simple, mobile-friendly design. Because the
+          viewport is configured correctly, the page fits nicely on phones and
+          tablets without forcing the user to zoom in.
+        </p>
+      </div>
+
+      <div class="card">
+        <p>
+          Try removing the viewport meta tag from the <code>&lt;head&gt;</code>
+          and reloading on a small screen. The browser will likely treat the
+          page as much wider, shrinking everything to fit and making text hard
+          to read.
+        </p>
+      </div>
+
+      <div class = "notice">
+        <p>
+          Note: On desktop browsers, you may not see a difference when resizing
+          the window. 
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
+

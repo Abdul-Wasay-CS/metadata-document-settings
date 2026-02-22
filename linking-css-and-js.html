@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 2: METADATA & DOCUMENT SETTINGS
+  FILE: linking-css-and-js.html
+
+  WHAT:
+    Shows how to link external CSS and JavaScript files using
+    <link> and <script> tags.
+
+  HOW:
+    1. Open this file in your browser.
+    2. Notice the styled button and colored text (coming from styles.css).
+    3. Click the button and watch the console (F12 / DevTools) for logs
+       from script.js.
+    4. (EXPERIMENT) Temporarily remove the <link> or <script> tags and see
+       how that affects styling and behavior.
+
+  WHY:
+    Keeping CSS and JavaScript in separate files:
+      - Encourages reuse across pages.
+      - Keeps HTML cleaner and easier to read.
+      - Allows browsers to cache static assets.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linking CSS &amp; JS</title>
+
+    <!--
+      The <link> tag pulls in an external stylesheet.
+      It belongs in the <head> so the browser can load styles early.
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+    <h1 class="page-title">Linking CSS and JavaScript</h1>
+
+    <p class="highlight">
+      This paragraph is styled by <code>styles.css</code>, not by inline
+      styles. This keeps the HTML clean and separates concerns.
+    </p>
+
+    <button id="click-me-button" type="button">
+      Click me (JavaScript will respond)
+    </button>
+
+    <!--
+      Placing the script at the end of <body> means the HTML
+      has loaded before the JS runs, so it can safely find DOM elements.
+      Alternatively, you could put scripts in <head> with the "defer" attribute.
+    -->
+
+
+  </body>
+</html>
+

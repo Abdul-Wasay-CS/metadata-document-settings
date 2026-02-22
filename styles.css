@@ -1,0 +1,48 @@
+/*
+  STYLES FOR: linking-css-and-js.html
+
+  WHAT:
+    Basic styles to visually prove that the external CSS file is loaded.
+
+  HOW:
+    - Change colors, padding, or fonts here.
+    - Save the file and refresh the page to see updates.
+
+  WHY:
+    Using a shared stylesheet lets you keep visual design separate from
+    HTML structure, which makes both easier to maintain.
+*/
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  
+  margin: 2rem;
+  background-color: #f5f7fb;
+}
+
+.page-title {
+  color: #0b63ce;
+}
+
+.highlight {
+  background-color: #f6f6a3;
+  border-left: 4px solid #0ba252;
+  padding: 0.75rem 1rem;
+
+}
+
+#click-me-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #0b63ce;
+  color: white;
+  cursor: pointer;
+}
+
+#click-me-button:hover {
+  background-color: #074d9e;
+}
+

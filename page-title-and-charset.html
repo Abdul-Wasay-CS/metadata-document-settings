@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 2: METADATA & DOCUMENT SETTINGS
+  FILE: page-title-and-charset.html
+
+  WHAT:
+    Demonstrates the <title> element and the character encoding meta tag.
+
+  HOW:
+    1. Open this file in your browser.
+    2. Look at the browser tab: it should show the title defined below.
+    3. Observe the special characters (emoji and accented letters) in the body.
+    4. (EXPERIMENT) Temporarily remove the charset meta tag and see how some
+       characters may display incorrectly in older browsers.
+
+  WHY:
+    - <title> helps users identify your page in tabs and bookmarks.
+    - <meta charset="UTF-8"> ensures your text is interpreted correctly,
+      especially when using non-English characters.
+-->
+<html lang="en">
+  <head>
+    <!-- Character encoding: UTF-8 is the modern, recommended default. -->
+    <meta charset="UTF-8" />
+
+    <!-- Page title appears in the browser tab and in bookmarks. -->
+    <title>Title &amp; Charset Example</title>
+  </head>
+  <body>
+    <h1>Title &amp; Charset Example</h1>
+
+    <p>
+      This page uses <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> so we
+      can safely display characters like:
+    </p>
+
+    <ul>
+      <li>Accented letters: café, naïve, façade</li>
+      <li>Non-Latin scripts: Привет, こんにちは, مرحبا</li>
+      <li>Emoji: 😊 🚀 🌍</li>
+    </ul>
+
+    <p>
+      If the encoding were wrong or missing, some of these characters might
+      appear as question marks or boxes instead.
+    </p>
+  </body>
+</html>
+
