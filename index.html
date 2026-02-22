@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page for all files</title>
+
+    <style>
+        .Main-Heading {
+            font-size: 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #2755af;
+            color: white;
+            padding: 1rem;
+            padding-left:2rem;
+            text-align: center;
+        }
+    button {
+        margin: 2rem auto;
+        max-width: 300px;
+        padding: .75rem 1rem;
+        font-size: 1.25rem;
+        background-color: #157bae;
+        color: white;
+        border: none;
+        border-radius: 0.75rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #155272;
+        animation-delay: 100ms;
+    }
+
+    .description {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .links-body {
+        text-align: center;
+        border: 1px none #9a7878;
+        border-radius: 0.5rem;
+        padding: 1rem 1.5rem;
+        margin: 1rem;
+        margin-right: 0.75rem;
+        max-width:800px;
+    }
+
+    body {
+        background-color: #eae9e8;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+    .container div{
+        background-color: #c7d0ea;
+    }
+    </style>
+</head>
+<body>
+    <header class="Main-Heading">
+        Metadata &amp; Document Home Page
+    </header>
+    <div class ="container">
+        <div class="links-body" id="charset-and-title">
+            <p class= "description">
+                Demonstrations of different fonts and characters
+            </p>
+            <a href="page-title-and-charset.html">
+                <button a href="page-title-and-charset.html" type="button">
+                    Page Title &amp; Charsets
+                </button>
+            </a>
+        </div>
+        <div class="links-body" id="link-tag">
+            <p class= "description">
+                Demonstrates how to link external CSS and JavaScript files    
+            </p>
+            <a href="linking-css-and-js.html">
+                <button  type="button">
+                    Linking CSS &amp; JS
+                </button>
+            </a>
+        </div>
+        <div class="links-body" id="Meta-description-and-keywords">
+            <p class= "description">
+                Demonstrations of meta description and keywords.
+            </p>
+            <a href="meta-description-keywords.html">
+                <button  type="button">
+                    Description &amp; Keywords
+                </button>
+            </a>
+        </div>
+        <div class="links-body" id="viewport-and-responsive-intro">
+            <p class= "description">
+                Introduction to the viewport meta tag and responsive design basics.
+            </p>
+            <a href="viewport-and-responsive-intro.html">
+                <button  type="button">
+                    Viewport &amp; Responsive Intro
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
